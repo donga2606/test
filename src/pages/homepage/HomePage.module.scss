@@ -1,0 +1,237 @@
+@import "../../App.scss";
+
+/* main_banner section  */ // tomato
+
+/* what_happend section  */
+.what_happend {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    left: calc((17.3 / 192) * 100%);
+    top: calc((17.4 / 57.6) * 100%);
+    .title {
+      @include Text-Style-19();
+      margin-bottom: 6rem;
+    }
+    .des {
+      @include Text-Style-6();
+      width: 66.7rem;
+      height: 12.5rem;
+      opacity: 0.7;
+    }
+  }
+}
+
+/* Best product section */
+.best_product {
+  /* background */
+  .background {
+    @include FlexBox($direction: column, $align: center);
+    background-image: url("../../assets/img/bes-bg.png");
+    padding: 15rem 0;
+    height: 107.3rem;
+    position: relative;
+    .title {
+      @include Text-Style-5();
+      margin-bottom: 2.9rem;
+      text-transform: uppercase;
+    }
+    .des {
+      @include Text-Style-16();
+      width: 67rem;
+    }
+  }
+
+  .best_img_list {
+    @include FlexBox(center, center);
+    margin-top: 7.4rem;
+    position: absolute;
+    top: calc((36.2 / 134) * 100%);
+    .item {
+      position: relative;
+      .item__flower {
+        position: absolute;
+        width: 9.2rem;
+        transform: translateY(-50%);
+      }
+      .box {
+        @include Box($padding: 0.7rem 0.8rem 0.6rem 2.7rem);
+        @include FlexBox(space-between, center);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 36.8rem;
+        height: 7.9rem;
+        .script {
+          @include Text-Style-20();
+        }
+        .go_icon {
+          width: 6.5rem;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+}
+
+/* product show */
+.show_product {
+  .wrapper {
+    padding: 17rem;
+  }
+}
+
+/* brand_story */
+
+.brand_story {
+  background-color: $cerulean;
+  height: 95.6rem;
+  .wrapper {
+    @include FlexBox($direction: column, $align: center, $justify: center);
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    @include Text-Style-3();
+    text-transform: uppercase;
+    margin-top: 14rem;
+    margin-bottom: 3rem;
+  }
+  .content {
+    @include Text-Style-10();
+    width: 68.2rem;
+    margin-bottom: 9rem;
+  }
+  .colla {
+    position: relative;
+    &__info {
+      position: absolute;
+      @include Position(
+        $t: calc((2.5 / 41.8) * 100%),
+        $l: calc((61 / 125.1) * 100%),
+        $b: 0,
+        $r: calc((3.5 / 125.1) * 100%)
+      );
+      padding: 3.3rem 6.8rem 5.4rem 4.5rem;
+    }
+    &__title {
+      @include Text-Style-23();
+    }
+    &__desc {
+      @include Text-Style-8();
+      margin-bottom: 2rem;
+    }
+  }
+
+  .window {
+    width: 125.1rem;
+    height: 44.1rem;
+    z-index: 10;
+  }
+
+  .img__name {
+    @include Position($l: 153.4rem, $t: 6.1rem);
+    width: 14.7rem;
+    height: 13.4rem;
+  }
+  .img__plan {
+    @include Position($l: 160.1rem, $t: 11.4rem);
+    width: 14.8rem;
+    height: 18.6rem;
+  }
+  .img__paper {
+    @include Position($l: 6.9rem, $t: 18.3rem);
+    width: 18.3rem;
+    height: 20.8rem;
+  }
+  .img__flower {
+    @include Position($l: 172.3rem, $t: 19rem);
+    width: 19.7rem;
+    height: auto;
+  }
+  .img__3book {
+    @include Position($t: 41.5rem, $l: 0);
+    width: 19.2rem;
+    height: 33.8rem;
+  }
+  .img__1book {
+    @include Position($l: 19rem, $t: 49.7rem);
+    width: 18rem;
+    height: 25.5rem;
+  }
+  .img__calendar {
+    @include Position($r: 0, $t: 53.7rem);
+    width: 35rem;
+    height: 23.3rem;
+  }
+}
+
+/* happend issue section */
+.happend_issue {
+    overflow: hidden;
+  background-color: $goldenrod;
+  min-height: 114.3rem;
+  .wrapper {
+    @include FlexBox($direction: column, $align: center, $justify: center);
+    position: relative;
+  }
+  .header {
+    @include Text-Style-24();
+    text-transform: uppercase;
+    margin-top: 14rem;
+    margin-bottom: 3rem;
+  }
+  .content {
+    @include Text-Style-9();
+    width: 68.2rem;
+    margin-bottom: 5rem;
+  }
+  .brand_list {
+    @include FlexBox($align: stretch, $justify: center);
+    margin-top: 12rem;
+    .whpn {
+      @include FlexBox(space-around, center, wrap, $direction: column);
+      position: relative;
+      border: solid 3px $black-two;
+      background-color: $bright-orange-two;
+      width: 38.7rem;
+      padding: 4rem;
+      .title {
+        @include Text-Style-26();
+      }
+      .arrow {
+        width: 14.8rem;
+        height: 14.8rem;
+      }
+      .coin {
+        @include Position($r: 0, $b: 0);
+        transform: translate(1rem, 50%);
+        width: 16.7rem;
+        height: 16.7rem;
+      }
+    }
+  }
+  .dice_5 {
+    @include Position($l: calc((175/192)*100%), $t: 7rem);
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+  .dice_3 {
+    @include Position($l: 173rem, $t: 16rem);
+
+    width: 11.9rem;
+    height: 11.1rem;
+  }
+  .lol {
+    @include Position($l: 143rem, $t: 96rem);
+    width: 13rem;
+    height: 10rem;
+  }
+  .hot {
+    @include Position($l: 41rem, $t: 50rem);
+    width: 11rem;
+    height: 6rem;
+  }
+}

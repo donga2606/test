@@ -1,0 +1,44 @@
+@import "../../App.scss";
+
+.wrapper {
+  background-color: $black-two;
+}
+
+.header {
+  @include FlexBox(space-between, center);
+  height: 80px;
+  color: $white;
+  padding: 0 120px 0 97px;
+
+  .logo {
+    @include FlexBox(center, center);
+    &__img {
+      width: 226px;
+      height: 26px;
+      object-fit: contain;
+    }
+  }
+
+  .menu {
+    @include FlexBox(space-between, center);
+    &__item {
+      @include Text-Style-11();
+      text-transform: uppercase;
+    }
+    &__link{
+        color: $white;
+    }
+    &__split {
+      width: 1px;
+      height: 23px;
+      margin: 0 44px 6px 57px;
+      background-color: $pinkish-grey-two;
+    }
+    &__solution{
+        margin: 0 72px 0 76px;
+    }
+    &__apply{
+        margin-left: 79px;
+    }
+  }
+}

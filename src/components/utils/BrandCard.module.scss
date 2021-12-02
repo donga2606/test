@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.brand_card {
+  .header {
+    border: solid 3px $black-two;
+    background-color: $dark-brown;
+  }
+  &-red {
+    .header {
+      background-color: $bright-orange-two;
+    }
+  }
+  .brand_name {
+    @include Text-Style-25();
+    text-align: center;
+    
+  }
+}

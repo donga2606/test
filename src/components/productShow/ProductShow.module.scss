@@ -1,0 +1,6 @@
+@import "../../App.scss";
+
+.cards{
+    @include FlexBox(space-between, center, wrap);
+    gap: 1.8rem;
+}

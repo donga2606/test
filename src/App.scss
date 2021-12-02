@@ -1,0 +1,320 @@
+/* color */
+$black: #1a1a1a;
+$goldenrod: #fccb05;
+$tomato: #ea4913;
+$cerulean: #0565bb;
+$white-two: #eee;
+$kelley-green: #00833f;
+$lavender: #c6b8f5;
+$dark-brown: #110e03;
+$bright-orange-two: #f50;
+$mango: #ffb225;
+$tomato-two: #e84c33;
+$bluish: #2584b3;
+$sand: #dabb5e;
+$copper: #c73c27;
+$mango-two: #ffb227;
+$eggshell: #fffbd8;
+$tomato-three: #e0412a;
+$light-grey: #ced1c8;
+$pinkish-grey: #d4c4ab;
+$cloudy-blue: #b1d1cf;
+$light-grey-two: #d8dad7;
+$black-three: #222;
+$mid-blue: #245fc5;
+$greyish: #a9a9a9;
+$sun-yellow: #fcd32a;
+$golden-yellow: #ffc717;
+$black-four: #333;
+$dark: #1c2027;
+$white-three: #f4f4f4;
+$brownish-grey: #666;
+$pumpkin-orange: #fa7b26;
+$pinkish-grey-two: #ccc8c6;
+$white-four: #f1f1f1;
+$bright-orange: #f96400;
+$black-two: #111;
+$dark-maroon: #020001;
+$white: #fff;
+
+/* spacing */
+$--spacing-xxs: 4px;
+$--spacing-xs: 8px;
+$--spacing-s: 12px;
+$--spacing-m: 16px;
+$--spacing-l: 20px;
+$--spacing-xl: 24px;
+$--spacing-xxl: 28px;
+$--spacing-xxl-2: 32px;
+
+@mixin Text-Style-19 {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-align: left;
+  color: $white;
+}
+
+@mixin Text-Style-18 {
+  font-family: Montserrat;
+  font-size: 171.5px;
+  font-weight: 800;
+  line-height: 1.03;
+  text-align: center;
+  color: $black-two;
+}
+@mixin Text-Style-13 {
+  font-family: Montserrat;
+  font-size: 171.5px;
+  font-weight: 800;
+  line-height: 1.03;
+  text-align: center;
+  color: $white;
+}
+
+@mixin Text-Style-4 {
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-size: 64px;
+  line-height: 0.75;
+  text-align: left;
+  color: $black-two;
+}
+
+@mixin Text-Style-12 {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 0.54;
+  text-align: center;
+  color: $black-two;
+}
+@mixin Text-Style-5 {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-align: center;
+  color: $bright-orange;
+}
+@mixin Text-Style-3 {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 4.5px;
+  text-align: left;
+  color: $sun-yellow;
+}
+@mixin Text-Style-2 {
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 0.86;
+  text-align: left;
+  color: $black-three;
+}
+@mixin Text-Style-17 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 0.83;
+  text-align: left;
+  color: $dark-brown;
+}
+@mixin Text-Style-14 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+  color: $black-two;
+}
+
+@mixin Text-Style {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: left;
+}
+
+@mixin Text-Style-6 {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.75;
+  text-align: left;
+  color: $white;
+}
+@mixin Text-Style-16 {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: $bright-orange;
+}
+@mixin Text-Style-7 {
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 1.63;
+  text-align: right;
+  color: #abacaf;
+}
+@mixin Text-Style-8 {
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  text-align: left;
+  color: $black-three;
+}
+@mixin Text-Style-9 {
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  text-align: center;
+  color: $dark-brown;
+}
+@mixin Text-Style-10 {
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  text-align: center;
+  color: $sun-yellow;
+}
+@mixin Text-Style-15 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.14;
+  text-align: center;
+  color: $black-two;
+}
+@mixin Text-Style-11 {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: $white;
+}
+
+@mixin Text-Style-20 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5rem;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--black-three);
+}
+
+@mixin Text-Style-21 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.94;
+  text-align: left;
+  color: $black-three;
+}
+
+@mixin Text-Style-22 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-three;
+}
+@mixin Text-Style-23 {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 2.4;
+  text-align: left;
+  color: $black-three;
+}
+
+@mixin Text-Style-24 {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 4.5px;
+  text-align: left;
+  color: $dark-brown;
+}
+@mixin Text-Style-25 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.67;
+  text-align: left;
+  color: $white;
+}
+@mixin Text-Style-26 {
+  font-family: Montserrat;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1.04;
+  text-align: center;
+  color: $dark-brown;
+}
+@mixin Text-Style-27 {
+  font-family: NotoSansCJKkr;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--black-two);
+}
+@mixin FlexBox(
+  $justify: flex-start,
+  $align: flex-start,
+  $wrap: nowrap,
+  $direction: row
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+@mixin Box($padding: 1rem, $background: $white) {
+  border: 3px solid $dark-maroon;
+  padding: $padding;
+  background-color: $white;
+}
+
+@mixin Position(
+  $position: absolute,
+  $t: unset,
+  $r: unset,
+  $b: unset,
+  $l: unset
+) {
+  position: $position;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}

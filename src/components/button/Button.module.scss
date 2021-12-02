@@ -1,0 +1,8 @@
+@import "../../App.scss";
+
+.btn{
+    @include Box($padding: 0 3.7rem);
+    @include Text-Style-23();
+    background-color: transparent;
+    cursor: pointer;
+}
